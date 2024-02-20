@@ -21,7 +21,6 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something went wrong!: server crashed');
 });
 
-
 //Connecting to MongoDB
 mongoose.connect(config.DATA_BASE.MONGODB_URI, {
     useNewUrlParser: true
